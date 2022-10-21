@@ -1,5 +1,5 @@
 #!/bin/sh
-UUID="1eb6e917774b4a84aff6b058577c60a5"
+UUID="3d6ee473-22d6-42f4-9980-a9bfb60d4a89"
 export PORT=${PORT-8080}
 export PATH_vless=${PATH_vless-/$UUID-vless}
 export PATH_trojan=${PATH_trojan-/$UUID-trojan}
