@@ -1,4 +1,4 @@
-
+#!/bin/sh
 UUID="1eb6e917774b4a84aff6b058577c60a5"
 CADDYIndexPage="https://www.free-css.com/assets/files/free-css-templates/download/page265/shree.zip"
 export PORT=${PORT-8080}
