@@ -1,15 +1,12 @@
 #!/bin/sh
 UUID="1eb6e917774b4a84aff6b058577c60a5"
-CADDYIndexPage="https://www.free-css.com/assets/files/free-css-templates/download/page265/shree.zip"
 export PORT=${PORT-8080}
 export PATH_vless=${PATH_vless-/$UUID-vless}
 export PATH_trojan=${PATH_trojan-/$UUID-trojan}
 export PATH_vmess=${PATH_vmess-/$UUID-vmess}
 export PATH_shadowsocks=${PATH_shadowsocks-/$UUID-shadowsocks}
 
-#CADDYIndexPage-configs
-wget --quiet $CADDYIndexPage -O /main/index.html && unzip -qo /main/index.html -d ./ && mkdir page && mv ./*/* ./page/
-rm -f /main/index.html
+tar -xzvf page.tar.gz
 
 chmod +x ./caddy
 ./caddy start
