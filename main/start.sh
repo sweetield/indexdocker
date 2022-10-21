@@ -8,8 +8,8 @@ export PATH_shadowsocks=${PATH_shadowsocks-/$UUID-shadowsocks}
 
 tar -xzvf page.tar.gz
 
-chmod +x ./caddy
-./caddy start
+# 启动caddy程序
+caddy run --config /main/Caddyfile --adapter caddyfile
 
 echo '
  {
