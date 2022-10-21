@@ -10,5 +10,5 @@ RUN apk update && \
     rm -rf /cctv.zip /main/LICENSE /main/*.md /main/*.dat && \
     rm -rf /var/cache/apk/*
 
-RUN chmod +x /start.sh
+
 CMD sh start.sh
